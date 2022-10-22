@@ -6,21 +6,23 @@
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 10:44:33 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/06 10:45:09 by mmaarifa         ###   ########.fr       */
+/*   Updated: 2022/10/19 12:54:34 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int i;
-	int bb;
+	int	i;
+	int	bb;
 
-	bb =0;
+	bb = 0;
 	i = 0;
-	if  (str[0]== '-'||str[0] == '+'|| str [0] == ' '|| (str[0] >= 9 && str[0] <= 13))
+	if (str[0] == '-' || str[0] == '+' || str [0] == ' '
+		|| (str[0] >= 9 && str[0] <= 13))
 		i++;
-	else if (str[i] == '-' || str[i] == '+' || str[i] == ' '|| (str[i] >= 9 && str[i] <= 13))
-		return 0;
+	else if (str[i] == '-' || str[i] == '+' || str[i] == ' '
+		|| (str[i] >= 9 && str[i] <= 13))
+		return (0);
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		bb = bb * 10 + str[i] - '0';

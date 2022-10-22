@@ -6,14 +6,16 @@
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 11:05:23 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/06 18:03:50 by mmaarifa         ###   ########.fr       */
+/*   Updated: 2022/10/21 20:20:56 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
-size_t	ft_strlen  (const char *str)
+size_t	ft_strlen(const char *str)
 {
 	size_t	i;
+
 	i = 0;
 	while (str[i])
 	{

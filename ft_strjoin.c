@@ -1,41 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/05 17:18:40 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/21 20:12:51 by mmaarifa         ###   ########.fr       */
+/*   Created: 2022/10/09 10:51:13 by mmaarifa          #+#    #+#             */
+/*   Updated: 2022/10/21 20:19:36 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *di, const void *si, size_t n)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	size_t			i;
-	unsigned char	*d;
-	unsigned char	*s;
+	int		i;
+	int		j;
+	char	*f;
 
+	f = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (f == NULL)
+		return (f);
 	i = 0;
-	d = (unsigned char *)di;
-	s = (unsigned char *)si;
-	if (d > s)
+	j = 0;
+	while (s1[i])
 	{
-		while (n > 0)
-		{
-			d[n - 1] = s[n - 1];
-			n--;
-		}
+		f[i] = s1[i];
+		i++;
 	}
-	else
+	while (s2[j])
 	{
-		while (i < n)
-		{
-			d[i] = s[i];
-			i++;
-		}
+		f[i] = s2[j];
+		i++;
+		j++;
 	}
-	return (di);
+	f[i] = '\0';
+	return (f);
 }
