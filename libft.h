@@ -6,7 +6,7 @@
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 14:34:20 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/21 20:09:42 by mmaarifa         ###   ########.fr       */
+/*   Updated: 2022/10/24 13:14:36 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int		ft_isascii(int c);
 int		ft_isdigit(int c);
 int		ft_isprint(int c);
 char	*ft_itoa(int n);
-void	*ft_memchr(const char *s, int c, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memcpy(void *di, void *si, size_t n);
 void	*ft_memmove(void *di, const void *si, size_t n);

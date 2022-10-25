@@ -6,7 +6,7 @@
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 17:14:08 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/21 20:20:16 by mmaarifa         ###   ########.fr       */
+/*   Updated: 2022/10/23 13:12:00 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,15 @@ size_t	ft_strlcat(char *di, const char *si, size_t n)
 
 	i = 0;
 	j = 0;
-	a = 0;
-	b = 0;
-	while (di[a])
-		a++;
-	while (si[b])
-		b++;
+	a = ft_strlen(di);
+	b = ft_strlen(si);
+	if (!n && di == 0)
+		return (b);
+	if (a >= n)
+		return (b + n);
 	while (di[i])
 		i++;
-	while (si[j] && j < n)
+	while (si[j] && i < n - 1)
 	{
 		di[i] = si[j];
 		i++;
