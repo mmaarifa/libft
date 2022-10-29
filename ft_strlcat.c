@@ -6,7 +6,7 @@
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 17:14:08 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/23 13:12:00 by mmaarifa         ###   ########.fr       */
+/*   Updated: 2022/10/26 16:29:30 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ size_t	ft_strlcat(char *di, const char *si, size_t n)
 
 	i = 0;
 	j = 0;
-	a = ft_strlen(di);
 	b = ft_strlen(si);
-	if (!n && di == 0)
+	if (n == 0 && di == 0)
 		return (b);
+	a = ft_strlen(di);
 	if (a >= n)
 		return (b + n);
 	while (di[i])
@@ -38,3 +38,13 @@ size_t	ft_strlcat(char *di, const char *si, size_t n)
 	di[i] = '\0';
 	return (b + a);
 }
+/*
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+int main ()
+{
+	printf("%zu\n",ft_strlcat(0, "amin mm", 0));
+	//printf("orjenal :\n%zu",strlcat(0, "amin mm", 0));
+	return 0;
+}*/

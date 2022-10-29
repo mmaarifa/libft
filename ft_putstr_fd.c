@@ -6,11 +6,11 @@
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 16:05:18 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/18 16:05:32 by mmaarifa         ###   ########.fr       */
+/*   Updated: 2022/10/29 10:54:50 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

@@ -6,7 +6,7 @@
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 11:58:08 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/23 18:01:07 by mmaarifa         ###   ########.fr       */
+/*   Updated: 2022/10/26 18:12:48 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *s, int c)
 		i++;
 	while (i >= 0)
 	{
-		if (c == s[i])
+		if ((unsigned char)c == s[i])
 			return ((char *) &s[i]);
 		i--;
 	}

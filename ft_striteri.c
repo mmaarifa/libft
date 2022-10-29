@@ -6,11 +6,11 @@
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 16:07:27 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/21 20:19:14 by mmaarifa         ###   ########.fr       */
+/*   Updated: 2022/10/29 10:35:51 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_striteri(char const *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;
 

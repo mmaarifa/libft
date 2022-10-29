@@ -6,22 +6,40 @@
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 19:08:31 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/21 20:10:44 by mmaarifa         ###   ########.fr       */
+/*   Updated: 2022/10/28 20:29:39 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+char	*iff(int ni)
+{
+	char	*srce;
+
+	if (ni > 0)
+		ni = 0;
+	srce = malloc(2);
+	if (!srce)
+		return (0);
+		srce[0] = '0';
+		srce[1] = '\0';
+	return (srce);
+}
 
 char	*ft_itoa(int n)
 {
 	int		i;
 	long	s;
 	char	*src;
+	long	j;
 
-	s = n * (n > 0) - n * (n < 0);
-	i = 0 + 1 * (n < 0);
-	while (n && ++i)
-		n = n / 10;
+	j = n;
+	if (j == 0)
+		return (iff(0));
+	s = j * (j > 0) - j * (j < 0);
+	i = 0 + 1 * (j < 0);
+	while (j && ++i)
+		j = j / 10;
 	src = malloc((i + 1) * sizeof(char));
 	if (src == NULL)
 		return (src);
