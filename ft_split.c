@@ -6,14 +6,14 @@
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 15:33:44 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/29 12:16:08 by mmaarifa         ###   ########.fr       */
+/*   Updated: 2022/10/29 15:39:12 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-int	ft_wordlen(const char *s, int c)
+static int	ft_wordlen(const char *s, int c)
 {
 	int	i;
 	int	b;

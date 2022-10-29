@@ -6,13 +6,13 @@
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/16 19:08:31 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/28 20:29:39 by mmaarifa         ###   ########.fr       */
+/*   Updated: 2022/10/29 15:40:27 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*iff(int ni)
+static char	*iff(int ni)
 {
 	char	*srce;
 
