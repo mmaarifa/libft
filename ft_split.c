@@ -6,7 +6,7 @@
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 15:33:44 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/29 15:39:12 by mmaarifa         ###   ########.fr       */
+/*   Updated: 2022/10/30 16:39:08 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,8 @@ char	**ft_split(char const *s, char c)
 	char	**j;
 	int		d;
 
-	if (!s)
-		return (0);
+//	if (!s)
+//		return (0);
 	j = malloc((ft_wordlen(s, c) + 1) * sizeof(char *));
 	if (j == NULL)
 		return (j);

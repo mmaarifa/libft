@@ -6,7 +6,7 @@
 /*   By: mmaarifa <mmaarifa@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 15:58:01 by mmaarifa          #+#    #+#             */
-/*   Updated: 2022/10/29 05:59:41 by mmaarifa         ###   ########.fr       */
+/*   Updated: 2022/10/30 15:48:48 by mmaarifa         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,11 +34,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (0);
 	return (k);
 }
-/*
-#include <stdio.h>
-int main()
-{
-printf("%s",ft_strtrim("", ""));
-return 0;
-}
-*/
